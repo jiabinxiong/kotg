@@ -1,0 +1,365 @@
+/**
+ * Copyright KOTG
+ * Created by dante on 14-8-7.
+ */
+
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,address,big,cite,code,del,em,font,img,ins,small,strong,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend {
+    margin: 0;
+    padding: 0;
+}
+ol,ul {
+    list-style: none;
+}
+
+body {
+    font: .875em/1.375em Helvetica Neue, Arial;
+}
+
+img {
+    border: 0;
+}
+
+em, i {
+    font-style:normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+.body-back {
+    background-color: #fff;
+}
+.content-back {
+    background-color: #2473a8;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.f-size-16{
+    font-size: 16px;
+}
+
+.f-size-18{
+    font-size: 18px;
+}
+.f-size-20{
+    font-size: 20px;
+}
+.f-size-22{
+    font-size: 22px;
+}
+
+.l-h-50{
+    line-height: 50px;
+}
+
+.border-box{
+    border: 1px solid #c8c7cc;
+}
+.border-box-b{
+    border-bottom: 1px solid #c8c7cc;
+}
+
+
+
+.clear-fix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------
+    * KOTG 登录以后头部 通用
+        * 头部分为四个部份
+            1, logo
+            2, 导航
+            3, 用户
+            4, 通知
+
+  ----------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------
+    * 用字体代替图片
+  ----------------------------------------*/
+@font-face {
+    font-family: "iconfont";
+    src: url('../font-family/font-nav/iconfont.eot'); /* IE9*/
+    src: url('../font-family/font-nav/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font-family/font-nav/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font-family/font-nav/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font-family/font-nav/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+@font-face {
+    font-family: "arrow-icon";
+    src: url('../font-family/arrow/iconfont.eot'); /* IE9*/
+    src: url('../font-family/arrow/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font-family/arrow/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font-family/arrow/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font-family/arrow/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.head-nav ul li .icon,
+.user-info-text .user-name .icon,
+.notice .icon,
+.ui-tab-head .arrow-icon,
+.ui-tab-head ul li .icon{
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.head-nav ul li .icon,
+.notice .icon
+{
+    font-family: "iconfont" !important;
+}
+
+
+.user-info-text .user-name .icon,
+.ui-tab-head .arrow-icon,
+.ui-tab-head ul li .icon{
+    font-family: "arrow-icon" !important;
+}
+
+/*---------------------------------------- 结束 ----------------------------------------*/
+
+
+.head {
+    height: 60px;
+    padding: 0 16px;
+    color: #fff;
+    line-height: 60px;
+}
+
+.logo {
+    margin: 10px 0 0 20px;
+}
+
+/*----------
+    * 导航
+ ----------*/
+.head-nav ul li {
+    float: left;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.head-nav ul li .icon{
+    float: left;
+    font-size: 28px;
+}
+
+
+/*----------
+    * 用户
+ ----------*/
+.user {
+    margin: 10px 0 0 0;
+}
+
+.user-info .portrait {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.user-info .portrait img{
+    width: 38px;
+    height: 38px;
+    margin: 1px;
+}
+
+.user-info .portrait,
+.user-info .portrait img {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.user-info-text span {
+    float: left;
+    padding: 0 0 0 4px;
+}
+
+.user-info-text .user-welcome {
+    color: #bfd6e6;
+    line-height: 18px;
+    font-size: 14px;
+ }
+
+.user-info-text .user-name {
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.user-info-text .user-name .icon {
+    font-size: 12px;
+}
+
+
+/*----------
+    * 注册　登录
+ ----------*/
+.login-register span {
+    padding: 0 20px;
+}
+
+
+/*----------
+    * 通知
+ ----------*/
+.notice {
+    position: relative;
+    color: #fff;
+}
+
+.notice .icon {
+    font-size: 34px;
+    line-height: 60px;
+}
+
+.notice .number {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 14px;
+    background-color: #00d819;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------
+    * 头部下拉菜单
+
+  ----------------------------------------------------------------------------------------------------*/
+.ui-tab-head {
+    margin: 50px 0 0 0;
+    width: 90%;
+    padding: 4px 0;
+    border: 1px solid #c8c7cc;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+}
+
+.ui-tab-head .arrow-icon {
+    float: right;
+    height: 12px;
+    font-size: 30px;
+    line-height: 30px;
+    margin: -24px 20px 0 0;
+    color: #fff;
+}
+
+.ui-tab-head ul li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #323a45;
+    padding: 0 12px;
+}
+
+.ui-tab-head ul li .icon {
+    float: right;
+    color: #c3c3c3;
+}
+
+.ui-tab-head ul li:hover {
+    color: #323a45;
+    background-color: #f3f3f3;
+}
+
+.ui-tab-head ul li:hover .icon{
+    color: #323a45;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------
+    * 弹出层
+  ----------------------------------------------------------------------------------------------------*/
+.pop-window {
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+.pop-window .title {
+    height: 54px;
+    line-height: 54px;
+    padding: 0 26px;
+    color: #fff;
+    background-color: #2970a7;
+}
+
+.pop-window .title h3 {
+    float: left;
+}
+
+.pop-window .title .close {
+    float: right;
+}
+
+.pop-content {
+    height:  100px;
+}
+
+.pop-btn {
+    height: 44px;
+    padding: 10px 15px 0;
+    border-top: 1px solid #c8c7cc;
+}
+
+.pop-btn .btn {
+    float: right;
+    height: 26px;
+    padding: 0 14px;
+    line-height: 26px;
+    margin: 0 0 0 6px;
+    color: #fff;
+    background-color: #61a9de;
+}

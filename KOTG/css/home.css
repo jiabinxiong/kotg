@@ -1,0 +1,290 @@
+/**
+ * Created by dante on 14-8-8.
+ * home 三部份
+    1, 例表导航
+    2, 例表内容
+    3, 例表详情
+ */
+.content {
+
+}
+
+/*----------------------------------------
+    * 例表导航
+  ----------------------------------------*/
+.home-nav {
+    float: left;
+    width: 260px;
+    background-color: #424242;
+}
+
+.home-nav .list-nav .title{
+    height: 42px;
+    color: #a7a7a7;
+    line-height: 42px;
+    background-color: #333;
+    border-bottom: 1px solid #000100;
+}
+
+.home-nav .list-nav .title h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.home-nav .list-nav ul li {
+    height: 46px;
+    line-height: 46px;
+}
+
+
+
+.folders-list-nav ul li {
+    color: #fff;
+    font-size: 18px;
+}
+
+.tag-list-nav ul li{
+    color: #c4c4c4;
+    font-size: 16px;
+}
+.tag-list-nav ul li span em.number {
+    margin: 0 0 0 4px;
+}
+
+
+/*----------------------------------------
+    * 例表内容
+  ----------------------------------------*/
+
+/*----------
+    * search 图标字体
+ ----------*/
+@font-face {font-family: 'searchiconfont';
+    src: url('../font-family/search/iconfont.eot'); /* IE9*/
+    src: url('../font-family/search/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font-family/search/iconfont.woff') format('woff'), /* chrome、firefox */
+         url('../font-family/search/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+         url('../font-family/search/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+
+.home-nav-list {
+    float: left;
+    width: 300px;
+}
+
+.search {
+    height: 42px;
+    background-color: #f2f7f9;
+    border-bottom: 1px solid #c8c7cc;
+}
+
+.search-type-btn .icon,
+.search-input .icon{
+    float: left;
+    color: #4d4d4d;
+    font-size: 2.2em;
+    font-family: "searchiconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.search-type-btn .icon {
+    font-size: 34px;
+    margin: 10px 2px 0 9px;
+}
+
+.search-input {
+    float: left;
+    margin: 4px 0 0 0;
+    position: relative;
+}
+.search-input .icon {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    font-size: 22px;
+}
+
+.search-input input{
+    width: 206px;
+    height: 20px;
+    font-size: 14px;
+    padding: 4px 5px 4px 35px;
+    line-height: 20px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+
+/*----------
+    * 文件上传
+ ----------*/
+
+.ui-file-upload {
+    height: 42px;
+    color: #fff;
+    background-color: #2671a5;
+    border-bottom: 1px solid #c8c7cc;
+}
+.ui-file-upload span.title {
+    float: left;
+    line-height: 42px;
+}
+
+.ui-file-upload ul {
+    float: right;
+}
+
+.ui-file-upload ul li {
+    float: left;
+    line-height: 42px;
+    margin: 0 10px 0 0 ;
+}
+
+/*----------
+    * 例表
+ ----------*/
+.home-nav-list-content {
+    background-color: #f9f9f7;
+    border-right: 1px solid #c8c7cc;
+}
+
+.home-nav-list-content-li {
+
+}
+
+.home-nav-list-content-li ul {
+
+}
+
+.home-nav-list-content-li ul li {
+    height: 98px;
+    color: #545452;
+    padding: 6px 14px;
+    border-bottom: 1px solid #c8c7cc;
+}
+
+.home-nav-list-content-li ul li .l-area {
+    width: 170px;
+    padding: 8px 0 0 0;
+}
+
+.home-nav-list-content-li ul li .l-area h3 {
+    height: 42px;
+    padding: 0 5px 0 0 ;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.home-nav-list-content-li ul li .l-area span.time {
+    display: block;
+    color: #598ab2;
+    line-height: 18px;
+    margin: 6px 0 0 0;
+}
+
+.home-nav-list-content-li ul li .r-area span.img{
+    display: block;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #e4e4e2;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+}
+
+.home-nav-list-content-li ul li:nth-child(odd) {
+    background-color: #ebebe9;
+}
+
+
+.statistics-number {
+    height: 34px;
+    color: #2f7bb0;
+    line-height: 34px;
+    text-align: right;
+
+    background-color: #e9edf0;
+}
+
+
+
+/*--------------------
+    * 详情
+ --------------------*/
+.details-area {
+
+}
+
+.details-nav {
+    height: 42px;
+    background-color: #f2f7f9;
+    border-bottom: 1px solid #c8c7cc;
+}
+
+.details-nav .source-articles-address {
+    line-height: 42px;
+}
+
+.details-nav .source-articles-address .icon {
+
+}
+
+
+.ui-details-tools-btn ul li {
+    float: left;
+    margin: 0 14px 0 0 ;
+    line-height: 42px;
+}
+
+
+/*----------
+    * add tag area
+ ----------*/
+.details-add-tag-area {
+    height: 21px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #c8c7cc;
+}
+
+.ui-add-tag ul li,
+.ui-add-tag-btn{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 10px 0 0;
+    padding: 0 0 0 6px;
+    border: 1px solid #c2d9e8;
+    color: #323a45;
+    background-color: #eaf6ff;
+}
+
+.ui-add-tag ul li .text {
+    padding-right: 4px;
+}
+
+.ui-add-tag ul li .icon{
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    border-left: 1px solid #c2d9e8;
+}
+
+.ui-add-tag-btn {
+    padding-right: 6px;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .home-nav {
+        display: none;
+    }
+}
